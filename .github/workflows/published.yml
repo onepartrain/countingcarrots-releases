@@ -1,7 +1,15 @@
 name: Release published
 
-# When a draft release here is published, tell the app's repo (iffy/countingcarrots) so it moves that
-# release's change notes into its CHANGELOG.md (its "Release published" workflow).
+# When a draft release here is published:
+#
+# - CHANGELOG.md on main gets the published build's section for its version. The app's release workflow
+#   (iffy/countingcarrots) writes each draft's section to CHANGELOG.md here and makes the draft on that
+#   commit, so the tag's CHANGELOG.md is what was published; a later draft of the same version may have
+#   replaced it on main since.
+# - The app's repo is told, so it deletes the published change notes and moves to the next version (its
+#   "Release published" workflow).
+#
+# It can also be run by hand: Actions → Release published → Run workflow, with the release's tag.
 #
 # Secret it needs (Settings → Secrets and variables → Actions):
 #   APP_REPO_TOKEN   A fine-grained token with "Contents: read and write" on iffy/countingcarrots
@@ -10,19 +18,84 @@ name: Release published
 on:
   release:
     types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: The published release's tag (v<version>-<commit>-<run>)
+        required: true
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
 
 permissions:
   contents: read
 
+env:
+  TAG: ${{ github.event.release.tag_name || inputs.tag }}
+
 jobs:
+  changelog:
+    name: Update CHANGELOG.md
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Put the published section in CHANGELOG.md
+        run: |
+          # Tags look like v2026.2-f0b997d-12 (older ones v2026.1.0-f0b997d-12; "2026.1.0" is released as "2026.1").
+          if [[ ! "$TAG" =~ ^v([0-9]+\.[0-9]+)(\.0)?-[0-9a-f]{7,40}-[0-9]+$ ]]; then
+            echo "::error::\"$TAG\" isn't a release tag like v2026.2-f0b997d-12."
+            exit 1
+          fi
+          export VERSION="${BASH_REMATCH[1]}"
+          if ! git show "refs/tags/$TAG:CHANGELOG.md" > published.md 2>/dev/null; then
+            echo "$TAG has no CHANGELOG.md; leaving it alone."
+            exit 0
+          fi
+          # Each version is a "# v<version>" heading and the list under it, newest first.
+          node --input-type=module -e '
+            import { readFileSync, writeFileSync } from "node:fs";
+            const version = process.env.VERSION;
+            const section = (text) => {
+              const m = text.match(new RegExp(`^# v${version.replace(/\./g, "\\.")}\\s*$`, "m"));
+              if (!m) return null;
+              const rest = text.slice(m.index + m[0].length);
+              const next = rest.search(/^# /m);
+              return { start: m.index, end: m.index + m[0].length + (next < 0 ? rest.length : next) };
+            };
+            const from = readFileSync("published.md", "utf8");
+            const ours = section(from);
+            if (!ours) { console.log(`The tag'"'"'s CHANGELOG.md has no ${version}; leaving it alone.`); process.exit(0); }
+            const body = from.slice(ours.start, ours.end).trim() + "\n\n";
+            let text = readFileSync("CHANGELOG.md", "utf8");
+            const theirs = section(text);
+            text = theirs ? text.slice(0, theirs.start) + body + text.slice(theirs.end).trimStart() : body + text.trimStart();
+            writeFileSync("CHANGELOG.md", text.trimEnd() + "\n");
+          '
+          rm published.md
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add CHANGELOG.md
+          if git diff --cached --quiet; then
+            echo "CHANGELOG.md already has the published $VERSION."
+            exit 0
+          fi
+          git commit -m "Changelog for $VERSION as published ($TAG)."
+          git push origin HEAD:main
+
   notify:
-    name: Update the app's changelog
+    name: Update the app's repo
     runs-on: ubuntu-latest
     steps:
       - name: Start the app repo's "Release published" workflow
         env:
           GH_TOKEN: ${{ secrets.APP_REPO_TOKEN }}
-          TAG: ${{ github.event.release.tag_name }}
         run: |
           if [ -z "$GH_TOKEN" ]; then
             echo "::error::APP_REPO_TOKEN must be set (Contents: read and write on iffy/countingcarrots)."

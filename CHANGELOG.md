@@ -1,0 +1,56 @@
+# v2026.2
+
+- Your state's withholding returns, yearly reconciliation and unemployment wage reports are now in the Tax forms checklist and on Home with their due dates, each with how to file it, and a return you file along with a payment can be checked off when you mark that payment as sent. Each new hire now gets a new-hire report to check off too.
+- The activity log shows times as 29 Sep 2026, 3:04 PM like the rest of the app, names every change in plain English, and highlights rows on hover like other tables.
+- Counting Carrots can now back up your company file by itself, into a folder you choose, ideally on a cloud drive. It keeps a backup for each of the last 7 days, one a week for the last month and one a month for the last year, and you can restore any of them from Settings. A week after your first payday, Home reminds you to turn it on.
+- A date field that has something typed in it that isn't a date now says so, and saving an employee, figuring out a payday or recording an owner payment waits until it's fixed.
+- Money to send, Notices and Forms to file now look like one tidy checklist each: every row has a circle at the left that you click once it's sent, given, posted or filed, and it turns into a green check you can click to undo. The PDF and spreadsheet of these lists include the circles too.
+- Notices, Money to send, Forms to file and Taxes by quarter now work the same way: click the circle to mark something done with the date it happened, click the green check to undo it after a question, and deadlines read Due on every page.
+- Choosing Monthly or Semiweekly under Federal tax deposits now also moves the due dates of state income tax that's paid on the same day as the IRS deposit.
+- Recording an owner payment always goes to a current owner, even right after someone is marked as no longer an owner.
+- You can now email pay stubs. Set up your email server under Settings, note on each employee's page that they agreed to get pay stubs by email, then send them from the payday one at a time or all at once. Each one emailed is marked given.
+- A payday's Email buttons for pay stubs now always show, greyed out with the reason when email isn't set up or the person hasn't agreed to get pay stubs by email.
+- Settings now lists every email sent from the company file (when, to whom and what, not the email itself), and a payday shows which pay stubs were emailed and to what address.
+- Every date on the employee page now uses the app's date field with the two-month calendar, the rehire note shows dates like 1 Mar 2026, and state names are spelled out.
+- The note for a form filed another way now starts empty, and the app no longer names a particular filing service.
+- The link for Florida's minimum wage poster works again, and the notice now also links Florida's minimum wage page.
+- Marking a new-hire report or state return as filed now clears it from the Tax forms count in the menu right away.
+- Rows on Forms to file can now be opened from the keyboard.
+- Home now shows one checklist of everything to do: money to send, tax forms to file, notices and posters, and pay stubs to give. Click a row to open everything you need to get it done right there (the steps to pay, making and mailing a form, a notice's documents, the pay stub to print or email), and a row you mark done stays in its place for a day before it moves to the bottom.
+- Each form on Forms to file, and each payment's step-by-step instructions, now has a box for your own notes, like a login hint or a step that trips you up. The note is kept with that form or agency and shows up again next time.
+- The 401(k) check now matches deposits to the right person even if their name was corrected during the year, or two people share a name.
+- Adding an owner, marking someone as no longer an owner, or marking an employee as an owner's spouse now redoes which unsent 401(k) deposits go through personal checking first.
+- Links to a part of My company or Settings, like Home's tasks and the locked Social Security numbers notice, now scroll to that part of the page.
+- Marking a tax item sent on Money to send now updates Taxes by quarter on the same page right away, and the other way around.
+- When My company refuses a change (for example a FUTA credit reduction that looks wrong), nothing is saved now. Before, every state's unemployment rate, account number and withholding number could be lost.
+- File, New Company File now opens the new-company form straight away, and every button that opens a company file does it the same way, with the same name.
+- New-hire reports due before your first payday now count in the Forms to file badge and on Home, and the page no longer says you're all caught up while one is due. The report also says the right first day it can be filed.
+- On the forms for marking something sent, filed or done, "(optional)" now sits on the same line as "Note", so the Note field lines up with the fields beside it.
+- Done notices and posters that no longer come up, like last year's posters, stay done instead of disappearing when their check is clicked.
+- The notices count is called Notices to give, send or post everywhere, and the Notices page says when only posters are left.
+- A payday with only owner payments no longer says its pay stubs are All given.
+- The payday preview and the delete-payday question now use your company's word for owner payments, like draws or dividends.
+- Messages that point you to another page now use the names in the menu, Pay and My employees.
+- The Pay page has a checklist of pay stubs still to give, where you can mark each one given without opening its payday.
+- A payday that can't be changed or deleted now says why.
+- On the payday form, switching to Fit pay within an amount no longer keeps hours entered by week, and changing the work dates redoes the hours from the weekly boxes. Changing a payday now keeps a payment to someone who has since stopped being an owner, and Split by ownership divides the whole amount among the owners when their percentages don't add up to 100%.
+- Counting Carrots now opens its window at the size and position it had when you last closed it.
+- Settings is now split into three tabs: General, Email and Backups.
+- People using another computer's shared company file are told the sharing computer needs the license, instead of being offered one to buy.
+- If changing someone's role or Allowed box under Share this company file doesn't save, the row goes back to what's saved.
+- A mistyped Social Security recovery code now stays in the box so you can fix it instead of typing it all again.
+- Monthly and yearly state returns that aren't due yet now say when the month or year is over, not the quarter, and new-hire reports show as Reported.
+- Moving an employee to another state now clears a set state withholding amount from their old state's form, so the new state's tax is worked out normally.
+- Pay stubs now label a more-than-2% S-corporation owner's health premium as after tax whenever it is, including when they also have commuter benefits.
+- When a card holds more than one table, each table's PDF and spreadsheet buttons now sit on that table and export it.
+- You can now undo marking a tax form as filed or mailed at any time, not just on the same day, in case it was a mistake. State returns and new-hire reports have an Undo link too.
+- Undoing a payday now refigures state unemployment on the year's other owner payments, so Taxes by quarter stays right.
+- People with view-only access to a shared company file now see pages without the buttons and boxes that change things, and My company no longer tries to save for them.
+- The Employees' W-2s PDF and spreadsheet no longer have an empty W-2 column.
+- Pages now use the full width of a large window, so wide tables like Employees' W-2s fit without scrolling sideways, and long column headings wrap instead of stretching the table.
+- On Windows and Linux the appearance choice is now Match my system, the Social Security numbers card no longer talks about a Mac, and Share this company file lists the computer's name as well as its address.
+- Menu badge tooltips say 1 pay stub instead of 1 pay stubs, the payday preview's Cash needed note mentions health insurance the company paid, the past-payday form says people with $0 are skipped, the Start payday page is headed Start payday, and the sidebar says Network sharing.
+
+# v2026.1
+
+- First release of Counting Carrots.
