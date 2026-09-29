@@ -1,3 +1,11 @@
+# v2026.3
+
+- File → Export All Data… saves everything in your company file (employees, paydays, paychecks, taxes, forms and more) as spreadsheet (CSV) files in a zip, so you can open it in Excel or move to another program.
+- Switching from QuickBooks Online or QuickBooks Desktop? You can now bring in your employees and this year's paychecks from QuickBooks reports (Excel or CSV), when you set up a new company or any time from the Paydays page. Imported paydays don't count toward your 3 free months of payroll.
+- Help → Show Log File… shows Counting Carrots's troubleshooting log, which you can attach to an email when asking for help. It records what the app did (opening files, imports, emails, backups, errors) and never Social Security numbers, email addresses or pay amounts.
+- On a Mac, clicking "Update to…" now installs the new version for you and reopens Counting Carrots, instead of downloading a disk image to drag into Applications. It checks that the update is signed by us and approved by Apple before installing it.
+- People using a shared company file from a web browser can now download any table as a PDF or spreadsheet, and pay stubs as PDFs; before, those buttons said only the person at the sharing computer could do that.
+
 # v2026.2
 
 - Your state's withholding returns, yearly reconciliation and unemployment wage reports are now in the Tax forms checklist and on Home with their due dates, each with how to file it, and a return you file along with a payment can be checked off when you mark that payment as sent. Each new hire now gets a new-hire report to check off too.
