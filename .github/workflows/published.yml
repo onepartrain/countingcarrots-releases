@@ -1,0 +1,33 @@
+name: Release published
+
+# When a draft release here is published, tell the app's repo (iffy/countingcarrots) so it moves that
+# release's change notes into its CHANGELOG.md (its "Release published" workflow).
+#
+# Secret it needs (Settings → Secrets and variables → Actions):
+#   APP_REPO_TOKEN   A fine-grained token with "Contents: read and write" on iffy/countingcarrots
+#                    (needed to start a workflow there with a repository_dispatch).
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    name: Update the app's changelog
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start the app repo's "Release published" workflow
+        env:
+          GH_TOKEN: ${{ secrets.APP_REPO_TOKEN }}
+          TAG: ${{ github.event.release.tag_name }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::error::APP_REPO_TOKEN must be set (Contents: read and write on iffy/countingcarrots)."
+            exit 1
+          fi
+          gh api repos/iffy/countingcarrots/dispatches \
+            -f event_type=release-published \
+            -f "client_payload[tag]=$TAG"
