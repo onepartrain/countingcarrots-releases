@@ -6,8 +6,8 @@ name: Release published
 #   (iffy/countingcarrots) writes each draft's section to CHANGELOG.md here and makes the draft on that
 #   commit, so the tag's CHANGELOG.md is what was published; a later draft of the same version may have
 #   replaced it on main since.
-# - The app's repo is told, so it deletes the published change notes and moves to the next version (its
-#   "Release published" workflow).
+# - The app's repo is told (after that), so it copies CHANGELOG.md, deletes the published change notes and
+#   moves to the next version (its "Release published" workflow).
 #
 # It can also be run by hand: Actions → Release published → Run workflow, with the release's tag.
 #
@@ -91,6 +91,7 @@ jobs:
 
   notify:
     name: Update the app's repo
+    needs: changelog
     runs-on: ubuntu-latest
     steps:
       - name: Start the app repo's "Release published" workflow
