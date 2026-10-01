@@ -1,3 +1,9 @@
+# v2026.5
+
+- Fixed the app freezing or doing nothing when opening forms on macOS 12 (Monterey).
+- Fixed buttons and menus doing nothing after you've started filling in a form: "Are you sure?" questions now actually appear. The log file (Help → Show Log File…) also records the pages you open and any problems, never names or amounts.
+- On a shared company file, only the person at the computer holding the file can print the recovery code; a payment made from a payday (pay after death) can only be changed by changing the payday; a W-2 for an earlier year keeps the retirement plan code it was run under; and a file dropped for someone you never added no longer carries over to the next new employee or contractor.
+
 # v2026.4
 
 - Contractors: a new Contractors page keeps each contractor's details, W-9 and payments. It also makes 1099-NEC and 1099-MISC forms, saves IRIS upload files, tracks TIN matching and IRS B notices, and withholds backup withholding when required.
