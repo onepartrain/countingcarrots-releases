@@ -1,3 +1,19 @@
+# v2026.6
+
+- Checklists can be filtered to show only what's left, every Home to do can be marked done, and on Tax forms the forms that don't apply start hidden. The Switching from QuickBooks to do is gone.
+- Contractors have the same forms table as employees for their W-9 (or W-8) and OK to get 1099s by email, and a Pay button on each row of the list.
+- App settings → Email lets you pick Gmail, Outlook, Fastmail, iCloud, Yahoo or Zoho (or Custom), links to where you make the app password it needs, and saves the email password encrypted like Social Security numbers.
+- Each employee has a table of the forms they need (Form I-9, W-4, the OK to get pay stubs by email, and their state's form): send each one by email, print it or drag it out, track whether it was sent and received, and keep the completed copy. Your company is already filled in on the W-4, and My company has a contact email for people to send their forms back to.
+- An employee's page saves by itself, so you can add someone with just a name and finish later, and payday asks for their pay and filing status if they're missing. A They no longer work here button asks for their last day and why.
+- You can fill in your part of an employee's Form I-9 in the app, and a scan or photo of an I-9 or W-4 is read for you to check, so you can create an employee from it or add it to one.
+- Setting up a company asks how many owners it has (up to four), and someone you add as an owner is treated as one right away so the pay warnings don't wrongly appear.
+- Search finds each state's withholding form (like G-4) and each employee's copy.
+- After you create a company you land on Home. A pay schedule your state doesn't allow for hourly staff shows a small yellow note instead of a red warning, and typing a hyphen in an SSN or EIN puts it in.
+- The new terms of use can wait a week if you've agreed to earlier terms; a new install still needs you to agree first.
+- Employees, contractors and your company now show what's left to set up, with a count on each tab and list, and Home has an item for each that takes you to the next thing to do. Your company's EIN and full address are on that list too.
+- PDFs the app makes (letters, pay stubs, tables and packages) now say when they were made, after the document name in the footer.
+- Printing steps show the keys for your computer (⌘P on a Mac, Ctrl+P on Windows), and the optional IRIS TCC to do shows the date to apply by.
+
 # v2026.5
 
 - Fixed the app freezing or doing nothing when opening forms on macOS 12 (Monterey).
