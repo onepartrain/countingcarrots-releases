@@ -1,43 +1,18 @@
 # v2026.7
 
-- The accountant package's PDF now opens with a proper summary page: the company, the year at a glance, the steps from total pay to take-home pay, other figures and the tax credits to ask about. The spreadsheet keeps the full table.
-- The activity log is now its own section on My company and shows 50 changes at a time with Newer and Older buttons; its PDF and Excel buttons still give you the whole log, with each date and time on one line.
-- Before you mark money sent or a form mailed, filed or given, the app now reminds you to check it against your records, and every Show me how guide says the agency's own instructions win.
-- Checkboxes and radio buttons now line up the same way on every page, with their notes directly under their text.
-- The Tax forms checklist no longer opens looking filtered: forms that don't apply are simply left out, with one link to show them.
-- The done column's menu on checklists only filters now (no sorting), and Home's greeting reads simply "Here's what needs doing."
-- Every set of choices now has its question shown above it, spaced like the other fields.
-- Pages are laid out more consistently: the year choice always sits beside the page's intro, settings lists no longer have PDF and Excel buttons, contractors have one Pay button at the end of each row, and phone numbers are written like 801-555-1234.
-- Deposit-schedule and due-date text now says how the app worked them out, that a letter from the IRS or your state overrides them, and when a date moves to the next business day.
-- The Employees list says "Not set" instead of $0.00 for pay that isn't entered yet, explains the blue numbers, and only shows 401(k) progress for people who save.
-- Every field now has a label you can see (or one a screen reader reads), and optional fields are marked the same way everywhere.
-- Small forms (marking things sent, filed or done) now look the same everywhere, fields meant to be short are short on every page, and side-by-side fields stack in a narrow window.
-- Help text sits in the same place for every field (right under it), and every card's introduction looks the same.
-- A license is now good for a year from the day you buy it, instead of for one tax year. Settings → License shows the last day yours covers, and the app reminds you in its last 30 days.
-- To-do lists are easier on the eyes: rows are no longer bold, and only an overdue date (and a list's total) stands out.
-- The to-do lists on Home, Money to send, Tax forms and Notices now say, right under their titles and in their PDFs, that they're worked out from what you've entered and may not be complete; "More" opens the details, including what Counting Carrots doesn't handle, right there.
-- Every dollar and percent field now looks and works the same way (with the $ or % in the field, and math allowed in dollar fields).
-- On My company, the notes under the Form 944 and seasonal-employer boxes now sit right under them, the designee's name and phone fields are wider, and "Saving…" floats at the bottom of the window instead of pushing the page down.
-- If someone else may have your recovery code, My company → Encryption can now make a new key: everything is encrypted again, the old code stops working for the file, and you get a new code to write down.
-- When no contractor needs a 1099, the Contractors' 1099s tab now says so plainly, without the year-end steps and filing details.
-- Notices now say "Done" (not "Given") for things you do rather than hand over, the Who column just names the person, and Tax forms' column says who to file with.
-- Your notes for paying an agency now sit at the top of its how-to-pay steps.
-- Starting a payday no longer scrolls sideways: each person's pay boxes wrap onto more lines, and benefits and expenses to pay back use labeled boxes with nothing cut off.
-- Forms 941, 940 and 945 made for filing now end with a page saying they were prepared with Counting Carrots from your entries and not reviewed by a professional, and the app's other PDFs, including the accountant package, say so in their footer or summary.
-- Plainer words: tax forms show what each one is ("Federal payroll tax return"), contractors show "Has a tax ID, no W-9" and "under $2,000: no 1099 needed", and the 401(k) check's last column is "Total".
-- Small text is easier to read: notes and hints are a little larger and darker.
-- The recovery code is now shown and printed on three lines, printed in a large typewriter-style font, and when you type one in, the letters O, I, L and U are read as 0, 1, 1 and V.
-- People using a shared company file in a web browser are now told the terms of use apply to them, can read them in App settings, and their "Got it" is kept in the activity log.
-- Long explanations on My company, Notices and the employee page are now one short line, with the details under a "More" or "What's this?" link, and ownership notes show only when they apply.
-- California and New York now show a "Heads up" to compare their paydays with the state's tables while their latest review's differences are being fixed, and the Tax tables tab shows, for each state, the official publications its numbers were compared with and when.
-- The PDF and Excel copies of the To do, Tax forms and Paydays lists include each row's title again, and sorting or filtering by those titles works.
-- The terms of use are updated: they now name everything the app helps with, say its lists and decisions are its reading of the rules, and add sections on government agencies and other websites, keeping the app up to date, and claims about your payroll. App settings shows each time you agreed to them.
-- Messages, warnings, "Saving…" and "Loading…" now all appear the same way, in the bottom right corner of the window, instead of in banners that push the page around.
-- The free-trial wording no longer sounds like the app sends money or files for you, and App settings says to install updates and check the Tax tables tab before running payroll.
-- Text sizes are now consistent across the app: the same kind of text (notes, badges, help boxes, headings) is the same size on every page, and nothing you need to read is tiny.
-- Sharing a company file now asks for each person's username (not "name"), on My company and on the sign-in screens.
-- The W-2s tab is tidier: a short reminder with details under More, "Missing" (with a link) where an SSN isn't entered, a labelled consent letter, and readable column headings.
-- App settings has a new "What Counting Carrots doesn't handle" section (also linked from Welcome and the to-do lists), and the first payday, and the first in each new state, shows a short reminder of it.
+- The app is tidier and easier to read: consistent text sizes, fields and forms on every page, plainer words, short explanations with the details under More, and messages in the bottom corner instead of banners that push the page around.
+- My company → Encryption can make a new key if someone else may have your recovery code, and recovery codes are printed larger and are easier to type in.
+- The app is clearer about its limits: a new "What Counting Carrots doesn't handle" section, to-do lists that say they come from what you've entered, reminders that the agency's own instructions and letters win, PDFs that say they were prepared with Counting Carrots, and updated terms of use.
+- A license is now good for a year from the day you buy it, instead of for one tax year, and the app reminds you in its last 30 days.
+- The activity log, and other long logs like imports and emails sent, show a page at a time; their PDF and Excel copies still have everything.
+- Paydays in California, Washington, New York, Pennsylvania, Ohio and Oregon say why that state's payroll is especially complicated and suggest having an accountant check it, and the Tax tables tab shows the official publications each state's numbers were checked against.
+- New Books page: bring in your bank and card transactions (synced through SimpleFIN Bridge, from bank files, or from QuickBooks), put them in categories, attach receipts, reconcile, and see profit and loss, cash flow, tax-return lines and balances. Payroll, owner's draws and contractor payments are matched to the bank, and Books' To do lists what's left to tie up.
+- Books → Budgets: set money aside for expenses (and the owner's estimated tax, health insurance and draws), give each budget a plan, including every payday, and fill them all with one button. Tax withheld from pay and sales tax collected are held aside, not counted as money to spend.
+- Accountants can make their own accountant file (File → New Accountant File…) and give clients their key. Clients can then send their books' history and year-end package encrypted, and the accountant can check the history and view the books read-only.
+- The accountant package opens with a one-page summary and now includes the books: profit and loss, cash flow, accounts at year end, things to look at, and every transaction in the spreadsheet.
+- Close the books through a day once a year's return is filed: after that, changes need a yes and are listed for your accountant. Every change is kept in a sealed history, so a report's code proves it hasn't been altered since.
+- In a narrow window the menu moves to the top (or keep it there with App settings → Always show the menu at the top).
+- My company → Payroll can turn payroll off for a company that only keeps its books here: payroll's reminders and categories go away, but posters and new hires' paperwork stay while anyone is still employed.
 
 # v2026.6
 
