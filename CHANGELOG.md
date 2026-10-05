@@ -1,3 +1,13 @@
+# v2026.8
+
+- The accountant's PDF is now the Accountant Package (“Testo Accountant Package 2026.pdf”): it opens with your books' bottom line, shows every account's beginning and ending balance, and includes the profit and loss by month. The code that proves your books weren't changed afterward is now called the Chain Code.
+- ⌘T (Ctrl+T on Windows and Linux) adds a transaction from any page. Books also points you at what's left to do: the first transaction that needs a category, and budgets due to be filled.
+- The 3 free months now cover your books too, and start with whichever you begin first: payroll or new transactions in your books. After them, changing your books needs a license; you can still look at them and open reports.
+- Budgets are quicker to work with: you see what each budget will have as you type, a fill shows what every budget gets before you say yes, and ⌘Z (Ctrl+Z) undoes your last change. The list of budgets saves as a PDF or spreadsheet.
+- Books reports saved as PDFs now read as financial statements, with your company and the dates at the top, categories indented under bold headings, and ruled totals; a report by month fits its page. Every PDF table has the same heading, a clearer typeface and roomier columns.
+- Open several company files at once: each gets a window of its own with the file's name in the title bar, and File → Open Recent takes you back to the ones you've used lately. An accountant file's menu is blue, so you can tell its window from a company's.
+- Smaller things: Home's to do list says which employee or contractor each item is for, the activity log filters from its column headings, and the list of what Counting Carrots does and doesn't do now covers Books.
+
 # v2026.7
 
 - The app is tidier and easier to read: consistent text sizes, fields and forms on every page, plainer words, short explanations with the details under More, and messages in the bottom corner instead of banners that push the page around.
