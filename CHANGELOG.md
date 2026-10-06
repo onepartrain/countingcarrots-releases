@@ -1,3 +1,16 @@
+# v2026.9
+
+- A payroll payment in Books asks plainly whether it was paid through Counting Carrots: match it to a payday (two of the same amount are told apart by the bank's memo), or say it's from before you used the app, like last year's FUTA.
+- Books' transactions sort by any column, show each payee on one line, and can show just the ones that need a category from the Category column's menu. Right-click a category to add a sub category, and split one bank payment between owners who share an account.
+- Start a payday with the amounts from an earlier one: right-click it in the list, or pick it under "Start with the amounts from" on a new payday.
+- Much more of the app works from the keyboard: ⌘K searches from any page, ⌘F finds words on the page, ⌘T adds a transaction and ⌘1 to ⌘9 open the pages in the menu (Ctrl on Windows and Linux). Enter presses a form's main button, Esc cancels, and Tab and the arrow keys reach rows, tabs, tables and calendars.
+- Starting a new company no longer asks for the EIN; add it later under My company. Fixed: text boxes autocorrecting what you type, and an extra owner appearing while you type owners' percents.
+- An account's first reconciliation starts by checking its starting balance against the bank's statement, and each account to reconcile is its own to do.
+- Each year there's a notice to send employees who work in another state the link to their workplace posters, with an Email button when email is set up.
+- The year-end package for your accountant is now called the Accountant Packet. Its PDF opens with your books' bottom line, shows every account's beginning and ending balance, adds profit and loss by month, and has a contents page you can click.
+- The Chain Code, the code that proves your books weren't changed, now always looks the same, in the app and on PDFs: a blue box with a chain-link icon.
+- Money to send keeps payments due more than 30 days away (like a year's FUTA) under Upcoming, and doesn't count them until then. Home's number in the menu counts only its own to dos, and each says which employee or contractor it's for.
+
 # v2026.8
 
 - The accountant's PDF is now the Accountant Package (“Testo Accountant Package 2026.pdf”): it opens with your books' bottom line, shows every account's beginning and ending balance, and includes the profit and loss by month. The code that proves your books weren't changed afterward is now called the Chain Code.
