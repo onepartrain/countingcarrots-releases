@@ -1,3 +1,11 @@
+# v2026.11
+
+- Send us feedback from Help → Feedback…, with a screenshot that hides what you've typed. A crash report can be sent right from the crashed page, and neither needs email set up.
+- File → Import brings in an employee's form or a bank's file of transactions, and the License card is shorter.
+- Fixed: the app opens where you left it, as big as you left it.
+- Pick a theme in App settings. The new Victorian theme dresses the app and its PDFs in botanical engravings and old type.
+- Add your logo in My company and it appears at the top of pay stubs, reports and letters.
+
 # v2026.10
 
 - Send us feedback from Help → Feedback…, with a screenshot that scribbles out names, numbers and anything you've typed. If a page crashes, you can email a report right from there.
