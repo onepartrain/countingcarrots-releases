@@ -1,3 +1,15 @@
+# v2026.10
+
+- Send us feedback from Help → Feedback…, with a screenshot that scribbles out names, numbers and anything you've typed. If a page crashes, you can email a report right from there.
+- Record who owns the company over time: distributions are checked against who owned what that day, and each owner gets a capital account.
+- The Accountant Packet adds a balance sheet, a general ledger, a journal your accountant can import, owners' capital accounts and equipment to depreciate.
+- Sole proprietors can send their year to TurboTax: File → Export saves a file for TurboTax Desktop, or lists the Schedule C amounts to type into TurboTax Online.
+- Paydays handle Trump account contributions (W-2 code TA) and the higher SIMPLE IRA limits for small employers, the I-9's Section 2 is printed for you to sign, and a correction can be dated on the payday it fixes.
+- Files you send your accountant are signed so no one can pass off a fake, sharing a company file uses stronger encryption, and view-only users can no longer see full SSNs or TINs.
+- To do lists put things that can't be done yet at the bottom, dates are shorter ("by Wed, Jun 18"), and the Tax tables tab shows what each update changed.
+- Fixes: My company no longer crashes, deadlines on a weekend or holiday move to the next business day, 1099 corrections follow the IRS's two-step process, and going back to an older version of the app no longer asks you to agree to the terms again.
+- The terms of use now say the posters link also sends how many people work in that state, so you'll be asked to agree again. Connecting your bank now says SimpleFIN Bridge is a paid service from the makers of Counting Carrots.
+
 # v2026.9
 
 - A payroll payment in Books asks plainly whether it was paid through Counting Carrots: match it to a payday (two of the same amount are told apart by the bank's memo), or say it's from before you used the app, like last year's FUTA.
