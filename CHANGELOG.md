@@ -1,3 +1,15 @@
+# v2026.12
+
+- Paydays is now Payroll, with Money to send as its first tab, and the search box is at the top of every page. Start payday fills in your next scheduled payday, and saving one takes you straight to the money to send for it.
+- Retirement plans do much more: 403(b), 457(b) and SEP plans, who can join and when, automatic enrollment, safe harbor and Roth matches, vesting and forfeitures, and a year-end 401(k) report that estimates the nondiscrimination and top-heavy tests. Notices lists each plan's yearly deadlines.
+- Payroll in 18 states and DC (Alabama through Louisiana, plus Utah) was checked against each state's latest rules and fixed where it differed, and more Alabama, Colorado, Kentucky and Michigan city taxes can be added to an employee. 2027 minimum wages already set are in.
+- Many more kinds of workers and pay are handled: farm workers, H-2A and H-2B workers (with job-order wage checks), statutory employees, election workers, government employees, religious orders, nonresident aliens under a tax treaty (with Forms 1042-S and 1042), military differential pay, educational and adoption assistance, and sick pay from your disability insurer.
+- Child support orders can be added for contractors too, and support orders and garnishments follow many more states' limits, fees and deadlines.
+- Corrections to earlier quarters and years follow the IRS rules more closely: record when you filed a 941-X or W-2c, and take tax that wasn't withheld back from someone's later pay. Changing a name or SSN after W-2s are filed tells you a W-2c is needed.
+- With two or more owners, each gets their own estimated tax payments, and Home shows this year's net profit so far beside them. Budgets now hold back what paydays still owe, so it isn't counted as money to spend.
+- Federal fixes include exempt W-4s running out each February, bonuses withheld correctly when there's more than one, FUTA on Money to send matching Form 940, commuter benefit limits by month, and overtime for tipped staff.
+- Smaller things: dates read day first ("Fri 24 Jan"), Home keeps finished items only for the day (the rest are under Completed tasks), an employee who was never paid can be deleted, a new hire's W-4 can be emailed, and next year's license can be bought early without losing days. Workplace posters are no longer tracked, and the terms of use now cover your books.
+
 # v2026.11
 
 - Send us feedback from Help → Feedback…, with a screenshot that hides what you've typed. A crash report can be sent right from the crashed page, and neither needs email set up.
