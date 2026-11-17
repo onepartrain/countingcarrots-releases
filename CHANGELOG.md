@@ -1,3 +1,13 @@
+# v2026.14
+
+- Backups are now fully encrypted, and your recovery code (Settings → Backups) is the only way to open one on another computer. The Backups tab says in one line whether you're in good shape, each backup shows the time it was made, and about once a year Home asks you to type your recovery code in so you know where it is.
+- Accountant files and accountant keys are gone: the Accountant Packet is a PDF and spreadsheet you save and send yourself. On For the accountant you can mark this year's estimated tax payments paid, even ones made before you used the app, and Home reminds S corporations, partnerships and C corporations when the company's own tax return is due.
+- Household employees like a nanny or housekeeper no longer have federal income tax withheld unless they ask, nor state or city tax where the law says the same, and a household paying under $1,000 a quarter can be marked so no federal or state unemployment is charged where the law leaves it out.
+- Payroll in more than 40 states and DC was checked again against each state's latest rules and fixed where it differed, most of all who's covered by unemployment, support orders and garnishments (a required health premium now counts inside the limit), new-hire reports and notices. Eugene's payroll tax, Philadelphia's resident and nonresident rates, and more Alabama and West Virginia city fees are new, more city returns are on the filing checklist, and five states' sales tax due dates are fixed.
+- New kinds of pay: Medicaid waiver pay for a live-in caregiver, mileage paid above the IRS rate, fishing boat proceeds to a contractor and severance paid for a release of claims. Retirement plans get several fixes to vesting, top-heavy and safe harbor rules, and in states that want hours on every pay stub, payday asks for a salaried employee's hours.
+- The app has its own icons instead of emoji, company files have their own (an account book), and the welcome screen lists your recent files first, shows your version and offers an update when there is one. Reading a photo or scan of a form or pay stub is several times faster.
+- Linux now has a .deb and an .rpm as well as the AppImage, for systems where the AppImage won't start.
+
 # v2026.13
 
 - Starting partway through the year is much easier: under My company → Bring in your history, enter each person's totals for each quarter so far instead of every past paycheck (or let the app read them from their last pay stub from your old payroll service), and check them against the Forms 941 already filed. Books started mid-year can bring in the earlier months as transactions or as a one-line-per-category summary.
