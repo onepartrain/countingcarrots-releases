@@ -1,3 +1,12 @@
+# v2026.15
+
+- Reconciling an account now leads you through three numbered steps, shows your books and the statement side by side, and opens under your list of accounts so you can reconcile several at once. A transaction the opening balance already included can be counted there in one step, and clicking a transaction in a reconciliation's report opens it.
+- Adding a transaction now looks just like opening one, and lets you split it and attach receipts as you add it. Splitting starts with the whole amount on the first part, and each new part takes whatever is left. Right-click a transaction, or several, to put them in a category, attach a receipt, merge, copy or remove them. On Books, j and k open the next and previous transaction, and ⌘↵ (Ctrl+Enter on Windows and Linux) saves the one you're editing.
+- Importing a bank's file picks the account for you and says why, and ⌘I (Ctrl+I on Windows and Linux) starts an import from any page.
+- Your notes on how to file forms and pay agencies are now stored encrypted, and an "Encrypted" badge marks everything the company file keeps encrypted.
+- Smaller things: tooltips and "Are you sure?" questions are in the app's own text size and colors, the categories you use most come first as you type, saying "No thanks" to remembering a payee sticks, PDFs print with plain gray lines, an accountant packet's file name now includes the books' latest entry number so a newer one never has the same name, automatic bank syncing no longer fills the activity log, and several fixes in Transactions.
+- Payroll in more than 20 states was checked again against each state's latest rules and fixed where it differed, most of all New York (Paid Family Leave, withholding, unemployment and income executions), Pennsylvania (a company car's personal use and moving pay are no longer taxed), Oregon (withholding now matches the state's formula to the cent) and which family members unemployment covers. California's 2026 FUTA credit reduction (1.5%), Vermont's 2027 minimum wage and Hawaii's 0.01% unemployment technology assessment are in, and Denver's occupational privilege tax is now quarterly for businesses with fewer than 60 people.
+
 # v2026.14
 
 - Backups are now fully encrypted, and your recovery code (Settings → Backups) is the only way to open one on another computer. The Backups tab says in one line whether you're in good shape, each backup shows the time it was made, and about once a year Home asks you to type your recovery code in so you know where it is.
