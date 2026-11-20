@@ -1,3 +1,11 @@
+# v2026.16
+
+- Books → Reports has a Budgets report, with each budget's balances and whether its plan was met (it's in the accountant packet too), and Budget plans over time shows whether each plan keeps up with spending. Drag budgets into the order you want, and type a few letters to find a category when adding one.
+- Sharing a company file is simpler: add a person and the app gives you the whole message to send them, and they paste it into Counting Carrots (or use File → Connect to a Remote Company File…), with nothing to type or check by eye. The connection reconnects by itself when the other computer goes quiet, and the computer sharing the file shows who's connected.
+- File → Export All Data no longer includes Social Security numbers, taxpayer ID numbers, or the tax forms and receipts kept in the file.
+- Local taxes: Kentucky school district taxes are no longer withheld from people who live in another state, or Kentucky occupational tax from precinct election workers. Covington, Campbell County, Georgetown and Scott County have updated due dates and forms on the filing list, along with each Kentucky place's yearly reconciliation. Battle Creek and Benton Harbor W-2s show the city's code, and Perry County, Indiana tax is no longer withheld on pay already taxed in Kentucky.
+- Smaller things: on a Mac, closing the last window no longer quits the app; the accountant packet says the days it covers; clicking a category on Books → Categories opens it right under its row; and a bank sync that fails for a reason unrelated to your bank no longer sends you to SimpleFIN Bridge.
+
 # v2026.15
 
 - Reconciling an account now leads you through three numbered steps, shows your books and the statement side by side, and opens under your list of accounts so you can reconcile several at once. A transaction the opening balance already included can be counted there in one step, and clicking a transaction in a reconciliation's report opens it.
